@@ -1,0 +1,429 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+button
+{
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+body
+{
+    font: 1em/1.5 "Dosis", sans-serif;
+    /*IE FIX*/
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.wrapper > *
+{
+    padding: 20px;
+}
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header img
+{
+    width:12em ;
+    height:auto;
+}
+.page-header nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.animation a:hover
+{
+    background-color: orange;
+    color:white;
+    padding: 5px 18px;
+    border-radius: 30px 30px 30px 30px;
+}
+.animation-visited:visited
+{
+    color:orange;
+}
+.page-header ul
+{
+    display: flex;
+    order: 1;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.5em;
+    justify-content: center;
+}
+.page-header ul li:not(:last-child)
+{
+    padding-right: 15px;
+}
+.page-header .cta-contact {
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 5px 18px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 42em;
+    background: url(../pictures/daniel-wiadro.jpg) no-repeat center / cover;
+}
+.page-main-header
+{
+    width: 40em;
+    height: 3em;
+    display: flex;
+    color: black;
+    text-align: center;
+    background: orange;
+    border-radius: 40px 40px 40px 40px;
+}
+.page-main-text
+{
+    background: black;
+    text-align:center;
+    border-radius: 40px 40px 40px 40px;
+}
+.page-main div
+{
+    max-width: 500px;
+    margin: 10px;
+    padding:10px;
+}
+.page-main h1
+{
+    margin-bottom: 20px;
+}
+.page-main p + p
+{
+    margin-top: 10px;
+}
+.page-main p
+{
+    color: white;
+    font-weight: bolder;
+}
+
+/*CONTAINER1
+--------------------------------------------------*/
+.container-1
+{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.container-1 p
+{
+
+    text-align:center;
+}
+.container-1 h2
+{
+    text-align: center;
+}
+.cooperation-1
+{
+    width: 25em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5px;
+}
+.cooperation-1 img
+{
+    width: 15em;
+    height: auto;
+}
+.cooperation-1 div
+{
+    display: flex;
+    justify-content: center;
+}
+.cooperation-2
+{
+    width:25em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5px;
+}
+.cooperation-2 img
+{
+    width: 15em;
+    height: auto;
+}
+.cooperation-2 div
+{
+    display: flex;
+    justify-content: center;
+}
+.cooperation-3
+{
+    width:25em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5px;
+}
+.cooperation-3 img
+{
+    width: 15em;
+    height: auto;
+}
+.cooperation-3 div
+{
+    display: flex;
+    justify-content: center;
+}
+.cooperation-4
+{
+    width:25em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5px;
+}
+.cooperation-4 img
+{
+    width: 15em;
+    height: auto;
+}
+.cooperation-4 div
+{
+    display: flex;
+    justify-content: center;
+}
+/*LIST-TO-DO
+--------------------------------------------------*/
+.title
+{
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.inputDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+.add
+{
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+.add:hover
+{
+    opacity: 0.7;
+}
+.remove
+{
+    background: none;
+    outline: none;
+    border: none;
+    color: #E00;
+    font-size: 1.4rem;
+    font-family: 'Hind', sans-serif;
+    cursor: pointer;
+}
+.item{
+    padding: 0.5rem;
+    border-bottom: 4px solid #fff;
+    margin-bottom: 1.5rem;
+}
+
+.item_input{
+    background: none;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1.4rem;
+    width: 245px;
+}
+.edit{
+    background: none;
+    outline: none;
+    border: none;
+    color: orange;
+    font-size: 1.4rem;
+    font-family: 'Hind', sans-serif;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer
+{
+    display: flex;
+    flex-direction: column-reverse;
+    color: black;
+    background-color: orange;
+}
+.page-footer ul
+{
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.page-footer ul li:not(:last-child)
+{
+    margin-right: 20px;
+}
+/* Mediascreen
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px)
+{
+    .page-header ul
+    {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .page-header .cta-contact
+    {
+        order: 1;
+    }
+
+    .page-footer
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page-footer ul
+    {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    body {
+        font-size: 18px;
+    }
+
+    .page-main {
+        padding-left: 90px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .container-1
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-to-do
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .container-1
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-1 img
+    {
+        width: 15em;
+    }
+    .cooperation-1
+    {
+        width: 18em;
+    }
+    .cooperation-2
+    {
+        width: 18em;
+    }
+    .cooperation-3
+    {
+        width: 18em;
+    }
+    .cooperation-4
+    {
+        width: 18em;
+    }
+    .page-main-header
+    {
+        width: auto;
+        height: auto;
+    }
+    .page-header ul
+    {
+        font-size:16px;
+    }
+    .list-to-do
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1366px)
+{
+    .container-1
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-to-do
+    {
+        display: none;
+    }
+}

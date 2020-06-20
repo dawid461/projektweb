@@ -1,0 +1,284 @@
+*
+{
+    padding: 0;
+    margin: 0;
+
+}
+
+button
+{
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+body
+{
+    font: 16px/1.5 "Dosis", sans-serif;
+    /*IE FIX*/
+    /*display: flex;
+    flex-direction: column;*/
+}
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.wrapper > *
+{
+    padding: 20px;
+}
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header img
+{
+    width:12em ;
+    height:auto;
+}
+.page-header nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.animation a:hover
+{
+    background-color: orange;
+    color:white;
+    padding: 5px 18px;
+    border-radius: 30px 30px 30px 30px;
+}
+.animation-visited:visited
+{
+    color:orange;
+}
+.page-header ul
+{
+    display: flex;
+    order: 1;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.5em;
+    justify-content: center;
+}
+.page-header ul li:not(:last-child)
+{
+    padding-right: 15px;
+}
+.page-header .cta-contact
+{
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 5px 18px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 42em;
+    background: url(../pictures/ben-white.jpg) no-repeat center / cover;
+}
+.page-main-header
+{
+    width: 40em;
+    height: 3em;
+    display: flex;
+    color: black;
+    text-align: center;
+    background: orange;
+    border-radius: 40px 40px 40px 40px;
+}
+.page-main-text
+{
+    background: black;
+    text-align:center;
+    color:white;
+    font-weight: bolder;
+    border-radius: 40px 40px 40px 40px;
+}
+.page-main div
+{
+    max-width: 500px;
+    margin: 10px;
+    padding:10px;
+}
+.page-main h1
+{
+    margin-bottom: 20px;
+}
+.page-main p + p
+{
+    margin-top: 10px;
+}
+/* CONTAINER-1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-1 span
+{
+    font-weight: bolder;
+}
+.contact-1
+{
+    text-align: center;
+    justify-content: center;
+}
+.contact-2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-2 h2
+{
+    border-bottom: 3px solid orange ;
+    text-align: center;
+}
+.contact-2-item
+{
+    width: 20em;
+    margin: 2em;
+    padding: 2em;
+}
+/* CONTAINER-1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-2
+{
+    display: flex;
+}
+.container-2-map
+{
+    width: 100%;
+    display: flex;
+    margin:2em;
+    padding: 2em;
+    justify-content: center;
+}
+.container-2-map iframe
+{
+    width: 100%;
+    height:30em;
+}
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer
+{
+    display: flex;
+    flex-direction: column-reverse;
+    color: black;
+    background-color: orange;
+}
+.page-footer ul
+{
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.page-footer ul li:not(:last-child)
+{
+    margin-right: 20px;
+}
+
+
+/* Mediascreen
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px)
+{
+    .page-header ul
+    {
+        width: auto;
+        margin-top: 0;
+    }
+    .page-header .cta-contact
+    {
+        order: 1;
+    }
+    .page-footer
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page-footer ul
+    {
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px)
+{
+    body
+    {
+        font-size: 18px;
+    }
+    .page-main
+    {
+        padding-left: 90px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .contact-2
+    {
+        flex-direction: column;
+    }
+    .container-2-map iframe
+    {
+        height: 20em;
+    }
+}
+@media screen and (max-width: 750px)
+{
+    .contact-2
+    {
+        flex-direction: column;
+    }
+    .contact-2-item
+    {
+        width: 16em;
+        margin: 1em;
+        padding: 1em;
+    }
+    .page-main-header
+    {
+        width: auto;
+        height: auto;
+    }
+    .container-2-map
+    {
+        margin: 1em;
+        padding: 0;
+    }
+    .container-2-map iframe
+    {
+        height: auto;
+    }
+    .page-header ul
+    {
+        font-size:16px;
+    }
+}
